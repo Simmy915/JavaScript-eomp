@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/product.css" />
+    <script
+      src="https://kit.fontawesome.com/c29743a859.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav">
+      <h2>QUEER ME OUT</h2>
+      <a href="/home.html">SHOP</a>
+      <div class="navIcons">
+        <div class="profileContainer">
+          <i class="fas fa-user"></i>
+          <div class="profileMenu">
+            <a href="/profile.html">PROFILE</a>
+            <a href="/addProduct.html">PRODUCTS</a>
+          </div>
+        </div>
+        <a href=""><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+    <div class="productOuterContainer">
+      <h1>PRODUCTS</h1>
+      <div class="innerContainer"></div>
+    </div>
+    <div class="modalContainer">
+      <div class="modal"></div>
+    </div>
+    <h1>CART PRODUCTS</h1>
+    <form onsubmit="addProduct(); return false">
+      <input class="inputProductName" type="text" placeholder="PRODUCT NAME" />
+      <input class="productCategory" type="text" placeholder="PRODUCT CAT" />
+      <input
+        class="productDescription"
+        type="text"
+        placeholder="PRODUCT DESCRIPTION"
+      />
+      <input class="productPrice" type="number" placeholder="PRODUCT PRICE" />
+
+      <button class="addButton">SUBMIT</button>
+    </form>
+    <script src="/addproduct.js"></script>
+  </body>
+</html>
